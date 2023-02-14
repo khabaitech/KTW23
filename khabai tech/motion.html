@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="refresh" content="4">
+	<title>car movment</title>
+	<style type="text/css">
+		.bg{
+			height: 450px;
+			width: 100%;
+			background: url('sky.jpg');
+			background-size: cover;
+			background-position: center;
+			position: relative;
+			overflow-x: hidden;
+		}
+		.eg{
+				background-image: url('car.png');
+				background-repeat: no-repeat;
+				height: 200px;
+				width: 800px;
+				display: block;
+				position: absolute;
+				top: 370px;
+				left: 100px;
+				z-index: 2;
+				background-size: 300px;
+				animation: car 0.5s linear infinite;
+			}
+			@keyframes car
+			{
+				
+				100%{
+					transform: translateY(-1px);
+				}
+				50%{
+					transform: translateY(1px);
+				}
+				0%{
+					transform: translateY(-1px);
+				}
+			}
+		.cg{
+			height: 200px;
+			width: 500%;
+			display: block;
+			background-image:url('road1.jpg');
+			position: absolute;
+			top: 400px;
+			bottom: 1px;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			animation: road 8s linear infinite;
+		}
+		@keyframes road
+		{
+			100%{transform: translateX(-3400px);
+			}
+			}
+			
+			#w1{
+				position: absolute;
+				top: 440px;
+				left: 130px;
+				z-index: 3;
+				animation: wheel1 0.5s linear infinite;
+			}
+			#w2{
+				position: absolute;
+				top: 440px;
+				left: 310px;
+				z-index: 3;
+				animation: wheel2 0.5s linear infinite;
+			}
+			@keyframes wheel1
+			{
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+				@keyframes wheel2
+			{
+				100%{
+					transform: rotate(360deg);
+				}
+	</style>
+</head>
+<body>
+<div class="bg">
+</div>
+<div class="cg">
+</div>
+<div class="eg">
+</div>
+<div class="wheel">
+	<img src="wheel3.png" height="50px" width="50px" id="w1">
+	<img src="wheel3.png" height="50px" width="50px" id="w2">
+</div>
+</body>
+</html>

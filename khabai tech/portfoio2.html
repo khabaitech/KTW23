@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"; integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <style type="text/css">
+    * {
+  font-family: "Garamond";
+}
+
+header {
+  background-image:url("https://images.unsplash.com/photo-1514171933653-2c8955139b77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c2ff6c43b7d7385e86b70f6425b318e3&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 400px;
+  padding-top: 50px;
+}
+
+header .container {
+  background:rgba(0, 0, 0, 0);
+  padding: 20px;
+}
+
+#main-header {
+  margin: 50px 0px 0px 0px;
+  padding: 30px;
+  color: white;
+  font-family: "Garamond";
+}
+
+
+@media (min-width: 400px) {
+  .navbar-expand .navbar-collapse {
+    display: flex !important;
+  }
+}
+.about-section {
+  background-color: #1b3a6d;
+  color: white;
+}
+
+
+header h1, h2 {
+  color: #0d3068;
+  text-align: center;
+  padding: 10px;
+  #box-shadow: 2px 2px 15px #0d3068;
+}
+
+header h3 {
+  color: white;
+  text-align: center;
+  font-family: "Garamond";
+}
+
+.navbar {
+  background: #0d3068;
+  box-shadow: 0px 5px 15px #d1a9be;
+}
+
+.navbar-brand {
+  color: white;
+  margin: 2px;
+  padding: 2px;
+}
+
+.navbar-brand:hover {
+  color: #e5d3c7;
+}
+
+.nav-link {
+  color: white;
+  padding: 2px
+}
+
+.nav-link:hover {
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+.padded {
+  padding: 30px
+}
+
+.less-important {
+  opacity: 0.8;
+  font-size: 16pt;
+}
+
+.semi-important {
+  font-size: 12pt;
+}
+
+.section {
+  text-align: center;
+  margin-top: 15px;
+  padding: 5px 0px 10px 0px;
+}
+
+p {
+  padding: 15px;
+  font-weight: bold;
+}
+
+.projects {
+  height: 50%;
+}
+
+.unordered {
+  list-style: none;
+}
+
+.col-sm-4 {
+  display: flex;
+}
+
+.col-sm-8 {
+ 
+}
+
+.col-sm-8 .ul {
+}
+.skills {
+  display: inline-block;
+  padding: 20px;
+}
+
+.skills btn {
+  background: #627FB0;
+  margin: 10px 20px;
+  padding: 5px;
+  border: 0px solid;
+  border-radius: 4px;
+   }
+
+.main-image {
+  height: 300px;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  transition: 0.8s
+}
+
+.main-image:hover {
+  transform: scale(1.05);
+  transition: 0.8s ease-in-out;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .semi-important {
+    margin-left: 40px;
+  }
+}
+
+.col-sm-4 .sec-imgs {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+}
+
+.col-sm-4 .box {
+  border: 1px solid;
+  margin: 5px;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box img:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.center {
+  text-align: center;
+
+}
+
+.project-section {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-section .container {
+  background:rgba(0, 0, 0, 0);
+}
+
+.small-image {
+  height: 2em;
+  width: 2em;
+}
+
+.contact-section {
+  background-color: #1b3a6d;
+  color: white;
+}
+
+.contact-section .container {
+  background:rgba(0, 0, 0, 0);
+}
+
+.btn {
+  color: white;
+}
+
+.btn a {
+  padding: 15px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.btn a:hover {
+  color: white;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.contact-image {
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+  margin: 5px;
+}
+
+input[type=text], select, textarea {
+  width: 75%;
+}
+
+.form-group {
+  width: 60%;
+  margin: auto auto;
+}
+
+.form-group .btn {
+  background: grey;
+}
+
+.form-group .btn:hover {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+}
+
+
+  </style>
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top justify-content-between">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><strong>Priyanshu Raj</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+          </button></div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About
+        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <div class=container>
+      <h1 id="main-header"><strong>My Portfolio</strong></h1>
+      <h3 class="less-important padded"><em><strong>A collection of my Front End Web Development work.</em></strong></h3>
+    </div>
+  </header>
+  <div class="about-section">
+  <div class=container>
+    <h2 id="about" class="padded">About me</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="priya.jpg"; class="main-image">
+      </div>
+      <div class="col-sm-8">
+        <p class="padded semi-important"> I am Priyanshu Raj.I am  learning Front End Web Developer currently living in patna, bihar. Since studing  diploma from computer science and engg.  GPP-7 .  I am currently doing my intern from KHABAI TECH . 
+        </p>
+        <ul>
+          <li><strong>Education:</strong> <div class="semi-important">Goverment Polytecnic collage Patna-7(2021-2023)</div></li>
+          <br>
+          <li><strong>Employment</strong>:
+            <li class="unordered semi-important">web devloper at khabai tech</li>
+          </li>
+          <br>
+          <li><strong>Skills:</strong>
+            <div class="skills text-center semi-important">
+              <div class="row">
+                <btn><img src="http://files.softicons.com/download/web-icons/html5-icons-by-iconshock/ico/logo.ico"; class="small-image"> HTML</btn>
+                <btn><img src="https://cdn.freebiesupply.com/logos/thumbs/2x/css3-logo.png"; class="small-image">CSS</btn>
+              <!---<btn><img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"; class="small-image"/> JavaScript</btn>
+              <btn><img src="https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png"; class="small-image">Bootstrap</btn>
+              <btn><img src="https://png2.kisspng.com/20180402/qee/kisspng-python-logo-clojure-javascript-9-5ac25c26a6cfb7.9060924715226870146833.png"; class="small-image"> Python</btn>
+              <btn><img src="http://pluspng.com/img-png/jquery-logo-png--800.gif"; class="small-image"> jQuery</btn>
+              <btn><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1000px-React-icon.svg.png"; class="small-image">React</btn>---->          
+                </div>
+            </div>
+          </li>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="project-section">
+      <div class="container">
+        <h2 id="projects" class="padded">Projects</h2>
+        <p class="section less-important"><em>Below you can see some of my recent work.</em></p>
+        <div class="row">
+          <div class="col-sm-4 box"><a href='https://codepen.io/tomnpython/pen/RYVmwy&#39; target="_blank" class="center padded"><img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/2237425.RYVmwy.small.42c4f68b-7180-470c-973e-4b50935007bd.png"; class="projects"/><p>Slideshow (HTML, CSS, Javascript)</p></a>
+          </div>
+          <div class="col-sm-4 box"><a href='https://codepen.io/tomnpython/pen/NLNrZR&#39; target="_blank" class="center padded"><img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/2237425.NLNrZR.small.5bc4ece1-d08d-4f59-bbd5-0191e2797522.png"; class="projects"/><p>Product Landing Page (Bootstrap, jQuery)</p></a>        
+          </div>
+          <div class="col-sm-4 box"><a href='https://codepen.io/tomnpython/pen/RYoymz&#39; target="_blank" class="center padded"><img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/2237425.mGJXZN.small.eb6237c4-63bb-4b81-a693-e32913a42dc1.png"; class="projects" /><p>Photography Gallery Homepage (Bootstrap, jQuery)</p></a>          
+          </div>
+        </div>
+       
+        <div class="row">
+          <div class="col-sm-4 box"><a href='https://codepen.io/tomnpython/pen/ReJQoP&#39; target="_blank" class="center padded"><img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/2237425.ReJQoP.small.9148e775-e080-41f0-a3d9-e005ea99c863.png"; class="projects"/><p>Calculator (HTML, CSS, Vanilla Javascript)</p></a>
+          </div>
+          <div class="col-sm-4 box"><a href='https://codepen.io/tomnpython/pen/OBVORv&#39; target="_blank" class="center padded"><img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/2237425.OBVORv.small.9757b236-25c5-4ed7-85b6-80df878f00d8.png"; class="projects"/><p>Author Quote Generator (Bootstrap, jQuery)</p></a>        
+          </div>
+          <div class="col-sm-4 box"><a href='https://codepen.io/tomnpython/pen/GXBPmm&#39; target="_blank" class="center padded"><img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/2237425.GXBPmm.small.c504e364-238a-4579-811d-31fba9dbe646.png"; /><p>Contact Card (Bootstrap, jQuery)</p></a>          
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="contact-section">
+      <div class=container>
+        <h2 id="contact" class="padded">Contact</h2>
+        <p class="section less-important padded"><em>For more information or to discuss future projects, contact me!</em></p>
+        <form action="/action_page form-horizontal inputForm" class="col-md-center-4">
+          <div class="form-group">
+            <label for="fullname" class="control-label"><strong>Name</strong></label>
+          <input class="form-control" type="text" id="fullname" name="fullname" placeholder="Please write your full name...">
+          </div>
+          <div class="form-group">
+            <label class="label-control" for="email"><strong>Email</strong></label>
+        <input class="form-control" type="text" id="email" name="email" placeholder="Please write your email...">
+          </div>
+          <div class="form-group">
+            <label for="message" class="label-control"><strong>Message</strong></label>
+          <textarea class="form-control" id="message" name="message" placeholder="Please leave a message..." ></textarea>
+          </div>
+          <div class="form-group">
+          <input class="btn btn-default" type="submit" value="Submit">
+          </div>
+    </div>
+        </form>
+        <div class="row">
+          <div class="col-sm-3 btn"><a href='https://github.com/TomNPython&#39; target='_blank'>Github<img class="contact-image" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"/></a></div&gt;
+          <div class="col-sm-3 btn"><a href='https://www.linkedin.com/in/tom-nicholson-04429089/&#39; target="_blank">LinkedIn<img class="contact-image" src="http://cofarming.info/wp-content/uploads/2017/01/Linkedin-logo-1-550x550-300x300.png"/></a></div&gt;
+          <div class="col-sm-3 btn"><a href='https://codepen.io/tomnpython/&#39; target="_blank">Codepen<img class="contact-image" src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png"/></a></div&gt;
+          <div class="col-sm-3 btn"><a href='https://www.freecodecamp.org/fcc1d46c208-5b64-4668-ac81-a79dc1d59ec3&#39; target="_blank">FreeCodeCamp<img class="contact-image" src="https://secure.meetupstatic.com/photos/event/4/c/b/b/600_468259643.jpeg"/></a></div&gt;
+        </div>
+      </div>
+  </div>
+ 
+  <footer class="page-footer font-small">
+    <div class="container-fluid">
+    <div class="row">
+    <h6 class="footer-copyright">&copy TomN 2018</h6>
+  </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"; integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"; integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"; integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>

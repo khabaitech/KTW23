@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<form name="myForm" action="" onsubmit="return validate()"> 
+	<input type="text" name="fName" placeholder="your name please">
+<input type="submit" name="">
+ </form>
+ <script type="text/javascript">
+ 	function validate()
+ 	{
+ 		var x=document.forms["myForm"]["fName"].value;
+ 		if(x==""){alert("name must be filled");
+ 		return false;
+}	
+ 	}
+ </script>
+</body>
+</html>
